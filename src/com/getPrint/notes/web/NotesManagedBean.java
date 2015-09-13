@@ -62,7 +62,20 @@ public class NotesManagedBean {
 			this.noteId = noteId;
 		}
 		
-	 
+	 public void addnotes() {
+		   final StringBuilder url;
+
+		   final Client client = ClientBuilder.newClient();
+	        final WebTarget target = client.target(url);
+	        final Response response = target.request().header("JSESSIONID", accessToken)
+	                .accept(Constants.CONTENT_TYPE).get();
+
+	        response.bufferEntity();
+	        client.close();
+
+	        return (response);
+		
+	}
 	
 
 }
