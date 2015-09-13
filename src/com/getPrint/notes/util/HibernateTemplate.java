@@ -1,6 +1,4 @@
 package com.getPrint.notes.util;
-
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -57,7 +55,6 @@ public class HibernateTemplate {
 		} catch (Exception e) {
 			e.getMessage();
 		}
-		
 		
 	}
 	public static List<Object> get(Class cls,Serializable i) {
