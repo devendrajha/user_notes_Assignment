@@ -13,8 +13,6 @@ import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-
-
 public class UserVO {
 	 public int userId;
 	 private String email;
