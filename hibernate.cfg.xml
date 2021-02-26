@@ -16,5 +16,4 @@
          <mapping  class="com.getPrint.notes.beans.Notes"/>
          <mapping  class="com.getPrint.notes.beans.User"/>
     </session-factory>
-    
 </hibernate-configuration>
